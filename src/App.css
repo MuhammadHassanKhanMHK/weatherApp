@@ -1,0 +1,77 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #f0f2f5;
+}
+
+/* Container styles */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card styles */
+.card {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card p.med-font {
+  font-size: 16px;
+  color: #555555;
+}
+
+.card h1.large-font {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card p.time-font {
+  font-size: 14px;
+  color: #888888;
+}
+
+.weather-image img {
+  max-width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .card h1.large-font {
+    font-size: 28px;
+  }
+
+  .weather-image img {
+    max-width: 80px;
+  }
+}
